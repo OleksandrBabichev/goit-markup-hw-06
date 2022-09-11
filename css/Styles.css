@@ -86,8 +86,6 @@ header {border-bottom: 1px solid #ECECEC;
 
 .link {
     text-decoration: none;
-
-
 }
 
 .site-nav {
@@ -151,7 +149,7 @@ header {border-bottom: 1px solid #ECECEC;
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    transition-property: color, fill;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -169,11 +167,6 @@ header {border-bottom: 1px solid #ECECEC;
     margin-right: 10px;
     fill: currentColor;
 }
-
-/* .smartphone {
-    width: 10px;
-    height:12px;} */
-
 
 .section {
     padding-bottom: 94px;
@@ -194,8 +187,7 @@ header {border-bottom: 1px solid #ECECEC;
     background-position: center;
     max-width: 1600px;
     height: 600px;
-    margin: 0, auto;
-
+    margin: 0 auto;
 } 
 
 .hero-title {
@@ -391,22 +383,18 @@ header {border-bottom: 1px solid #ECECEC;
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    /* transition: color var(--transition-dur-func), background-color var(--transition-dur-func); */
 }
 
 .social-block {
     width: 20px;
     height: 20px;
     fill: currentColor;
-
 }
 
 .social-link:hover,
 .social-link:focus {
     background-color: var(--hover-tet-color);
     color: var(--primary-bcg-color);
-    /* stroke: var(--primary-bcg-color); */
 }
 
 .clients-list {
@@ -443,7 +431,6 @@ header {border-bottom: 1px solid #ECECEC;
 }
 
 /* footer */
-
 
 .foot {
     background-color: var(--footer-bcg-color);
@@ -642,13 +629,14 @@ header {border-bottom: 1px solid #ECECEC;
 .example-link {
     display: block;
     text-decoration: none;
+    transition-property:box-shadow;
 }
 
 .example-link:hover,
 .example-link:focus {
-    box-shadow: 
-        5px 5px 4px 2px grey,
-        -5px -5px 4px 2px grey;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 10%),
+        5px 5px 5px rgb(0 0 0 / 8%),
+        5px 5px 5px rgb(0 0 0 / 12%);
 }
 
 .example-img {
@@ -715,8 +703,6 @@ header {border-bottom: 1px solid #ECECEC;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
-
-
 
 .frame {
     border-bottom: 1px solid #EEEEEE;
