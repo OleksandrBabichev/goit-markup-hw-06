@@ -420,6 +420,48 @@
                 <svg class="modal-exit"  width="30" height="30">
                     <use href="./images/spriten.svg#close" class="modal-use"></use></svg>
             </button>
+
+            <p>Залиште свої дані, ми вам передзвонимо</p>
+            <form name="registration-form" autocomplete="on" class="modal-form">
+                <label class="modal-label">
+                    <span class="modal-text">Ім'я</span>
+                    <span class="modal-input-zone">
+                        <input type="text" name="name" class="modal-field">
+                        <svg width="18" height="18" class="modal-icon">
+                            <use href="./images/sprite.svg#person-black">
+                            </use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-label">
+                    <span class="modal-text">Телефон</span>
+                    <span class="modal-input-zone">
+                        <input type="tel" name="telephone" class="modal-field">
+                        <svg width="18" height="18" class="modal-icon">
+                            <use href="./images/sprite.svg#phone-black">
+                            </use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-label">
+                    <span class="modal-text">Пошта</span>
+                    <span class="modal-input-zone">
+                        <input type="email" name="E-mail" class="modal-field">
+                        <svg width="18" height="18" class="modal-icon">
+                            <use href="./images/sprite.svg#email-black">
+                            </use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-label">
+                    <span class="modal-text">Коментар</span>
+                    <textarea name="user-comment" class="modal-field-comment" placeholder="Введіть текст" rows="5"></textarea>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <span>Погоджуюся з розсилкою та приймаю <a href="#" class="link-agreement">Умови договору</a></span> 
+                </label>
+            </form>
         </div>
     </div>
 
