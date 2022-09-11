@@ -537,12 +537,56 @@ header {border-bottom: 1px solid #ECECEC;
     fill: var(--primary-bcg-color);
 }
 
+.subsribe-footer {
+    margin-left: 93px;
+}
+
+.form-subscription {
+    display: flex;
+    align-items: center;
+}
+
+.input-footer {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    background-color: var(--footer-bcg-color);
+    border-color: var(--primary-bcg-color);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    color: var(--primary-bcg-color);
+}
+
+.button-footer {
+    color: #ffffff;
+    background-color: var(--hover-tet-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: flex;
+    padding: 10px 28px;
+    font-family: inherit;
+    gap:10px;
+    align-items: center;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+}
+
 /* кнопки */
 
 .button {
     color: var(--title-text-color);
-    background-color: var(--primary-bcg-color);}
-
+    background-color: var(--primary-bcg-color);
+}
 
 .button.secondary { 
     color: var(--title-text-color);
@@ -710,3 +754,9 @@ header {border-bottom: 1px solid #ECECEC;
     border-right: 1px solid #EEEEEE;
     padding:20px 24px;
 }
+
+
+
+
+
+
