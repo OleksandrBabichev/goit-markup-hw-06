@@ -538,7 +538,7 @@ header {border-bottom: 1px solid #ECECEC;
 }
 
 .subsribe-footer {
-    margin-left: 93px;
+    margin-left: auto;
 }
 
 .form-subscription {
@@ -688,18 +688,29 @@ header {border-bottom: 1px solid #ECECEC;
 }
 
 .modal-label {
+    position: relative;
     display: flex;
     flex-direction: column;
+    text-align: start;
+
+    margin-bottom: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
 }
 
 .modal-input-zone {
-    position: relative
 }
 
 .modal-icon {
     position: absolute;
-    top: 13px;
+    top: 50%;
     left: 12px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);        
 }
 
 .modal-text {
@@ -713,8 +724,8 @@ header {border-bottom: 1px solid #ECECEC;
 }
 
 .modal-field {
-    margin-bottom: 10px;
     width: 100%;
+    height: 40px;
 
     border: 1px solid var(--primary-text-color);
     border-radius: 4px;
@@ -725,9 +736,26 @@ header {border-bottom: 1px solid #ECECEC;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
 }
 
-.modal-field-comment {
+.modal-label:focus-within .modal-field,
+.modal-label:hover .modal-field,
+.modal-label:focus-within .modal-field-comment,
+.modal-label:hover .modal-field-comment {
+    border: 1px solid var(--hover-tet-color);
+
+}
+
+.modal-label:focus-within .modal-icon,
+.modal-label:hover .modal-icon {
+    fill: var(--hover-tet-color);
+}
+
+.modal-label-comment {
     margin-bottom: 20px;
+}
+
+.modal-field-comment {
     width: 100%;
+    height: 120px;
         
     border: 1px solid var(--primary-text-color);
     border-radius: 4px;
@@ -745,12 +773,6 @@ header {border-bottom: 1px solid #ECECEC;
     outline: none;
 }
 
-.modal-icon {
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);    
-}
-
 .modal-field:focus + .modal-icon {
     fill: var(--hover-tet-color);
 }
@@ -758,6 +780,7 @@ header {border-bottom: 1px solid #ECECEC;
 .modal-agreement-check {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     margin-bottom: 30px;
 }
@@ -801,6 +824,8 @@ header {border-bottom: 1px solid #ECECEC;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
+    cursor: pointer;
 }
 
 /* portfolio page  */
